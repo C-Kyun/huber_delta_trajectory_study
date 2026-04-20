@@ -1,0 +1,40 @@
+{
+  "outlier_indices_actual": [
+    11,
+    28,
+    44,
+    48,
+    110,
+    133,
+    136,
+    144,
+    148,
+    181
+  ],
+  "run": {
+    "avg_epoch_time_sec": 0.001736803499998132,
+    "best_epoch": null,
+    "config_id": "D_ratio_depth3_huber_d0p5_mag4_ratio0p05_rand1",
+    "depth": 3,
+    "device": "cpu",
+    "endpoint_error": 0.018969425931572914,
+    "epochs_ran": 200,
+    "final_training_loss": 0.2615518271923065,
+    "huber_delta": 0.5,
+    "loss_name": "huber",
+    "max_pointwise_deviation": 1.9806915521621704,
+    "method_label": "huber_d0.5",
+    "n_outliers": 10,
+    "outlier_magnitude": 4.0,
+    "outlier_ratio": 0.05,
+    "pair_key": "ratio=0.05",
+    "random_outlier_positions": true,
+    "reconstruction_mse": 0.649665892124176,
+    "run_id": "D_ratio_depth3_huber_d0p5_mag4_ratio0p05_rand1_seed0",
+    "seed": 0,
+    "smoothness_metric": 2.2300690460941297e-10,
+    "stopped_early": false,
+    "test_family": "D_ratio",
+    "training_time_sec": 0.3473606999996264
+  }
+}

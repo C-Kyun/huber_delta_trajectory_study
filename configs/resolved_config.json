@@ -1,0 +1,91 @@
+{
+  "data": {
+    "noise_std": 0.03,
+    "num_points": 200,
+    "outlier_indices": [
+      30,
+      80,
+      130,
+      170
+    ],
+    "outlier_magnitude": 4.0,
+    "outlier_ratio": 0.02,
+    "random_outlier_positions": false,
+    "t_max": 12.566370614359172
+  },
+  "experiments": {
+    "delta_sensitivity": {
+      "deltas": [
+        0.1,
+        0.5,
+        1.0
+      ],
+      "depth": 3,
+      "enabled": true
+    },
+    "depth_sensitivity": {
+      "depths": [
+        2,
+        3,
+        5
+      ],
+      "enabled": true,
+      "huber_delta": 0.5,
+      "losses": [
+        "mse",
+        "huber"
+      ]
+    },
+    "main_comparison": {
+      "depth": 3,
+      "enabled": true,
+      "huber_delta": 0.5
+    },
+    "outlier_study": {
+      "depth": 3,
+      "enabled": true,
+      "huber_delta": 0.5,
+      "losses": [
+        "mse",
+        "huber"
+      ],
+      "magnitudes": [
+        2.0,
+        4.0,
+        6.0
+      ],
+      "random_positions": true,
+      "ratios": [
+        0.01,
+        0.02,
+        0.05
+      ]
+    }
+  },
+  "loss": {
+    "default_huber_delta": 0.5,
+    "endpoint_weight": 10.0,
+    "smoothness_weight": 1.0
+  },
+  "model": {
+    "hidden_width": 128
+  },
+  "output": {
+    "results_dir": "results",
+    "save_checkpoints": false
+  },
+  "seeds": [
+    0
+  ],
+  "title": "How Does the Sensitivity Parameter delta in Huber Loss Control the Robustness-Accuracy Trade-off under Outlier Corruption in 3D Trajectory Reconstruction?",
+  "training": {
+    "early_stopping": {
+      "enabled": false,
+      "min_delta": 1e-08,
+      "patience": 600
+    },
+    "epochs": 200,
+    "lr": 0.003,
+    "weight_decay": 1e-05
+  }
+}

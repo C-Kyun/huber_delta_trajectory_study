@@ -173,7 +173,7 @@ The implementation used the `huber_delta_trajectory_study` project structure des
 The current submission outputs were obtained in Windows 11 PowerShell using the following sequence:
 
 ```powershell
-cd ~/{your_path]
+cd ~/{your_path}
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 Set-ExecutionPolicy -Scope Process Bypass
